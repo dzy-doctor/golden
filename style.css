@@ -149,11 +149,11 @@ body{
     color: #777777;
  }
  .services__main{
-    margin: 77px 0 181px 0;
+    margin: 77px 0 118px 0;
     width: 931px;
 
     display: flex;
-    outline: 1px solid red;
+    
     justify-content: space-between;
  }
  .services__item{
@@ -171,10 +171,117 @@ body{
     
  }
  .services__item__text{
-    padding-top: 18px;
+    margin-top: 10px;
+    line-height: 1.5;
 
     font-size: 14px;
     font-weight: 400;
     letter-spacing: -0.025em;
     color: #777777;
  }
+ 
+ /* portfolio ===
+ =========================*/
+ .portfolio{
+     text-align: center;
+     background-color: #f7f7f7;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+ .portfolio__title{
+    padding: 119px 0 20px 0;
+
+    font-size: 40px;
+    /* line-height: 75px; */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+    color: #222222;
+ }
+ .portfolio__subtitle{
+    font-size: 16px;
+    /* line-height: 1.2; */
+    font-weight: 400;
+    color: #777777;
+ }
+ 
+.portfolio__body{
+    margin: 75px 0 134px 0;
+    
+    max-width: 931px;
+    
+    display: flex;
+    
+}
+ .oval{
+    width: 34px;
+    height: 11px;
+    border: 10px solid #00ff00;
+    border-radius: 50px/50px;
+ }
+ /* portfolio ===
+ =========================*/
+.relaxation{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.relaxation__title{
+    padding: 124px 0 16px 0;
+
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+    color: #222222;
+}
+.relaxation__text{
+    font-size: 16px;
+    
+    font-weight: 400;
+    color: #777777;
+}
+
+.relaxation__body{
+    width: 931px;
+    outline: 1px solid red;
+    margin: 77px 0 243px 0;
+}
+
+.relaxation__body__item{
+    margin-left: 72px;
+    width: 504px;
+    display: flex;
+}
+.item__inner{
+    width: 255px;
+    margin-right: 38px;
+}
+.relaxation__body__title{
+    text-align: right;
+
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+    color: #222222;
+}
+.relaxation__body__text{
+    padding-top: 12px;
+    text-align: right;
+
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    color: #777777;
+
+}
+
+
+ /* relaxation ===
+ ======================== */
