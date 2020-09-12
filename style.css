@@ -39,6 +39,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 body{
     font-family: 'Arial', sans-serif;
+    
 }
  * {
      box-sizing: border-box;
@@ -119,8 +120,7 @@ body{
     text-transform: uppercase;
     color: #484543;
 }
-/* Header ===
- ======================*/
+
 
  /* Services===
  ======================= */
@@ -214,14 +214,19 @@ body{
     display: flex;
     
 }
+.indent:first-child{
+    margin-left: 30px; /*обращаемся к последнему классу и делаем ему отступ*/
+}
  .oval{
     width: 34px;
     height: 11px;
     border: 10px solid #00ff00;
     border-radius: 50px/50px;
  }
- /* portfolio ===
- =========================*/
+ 
+ /* relaxation ===
+ ========================== */
+
 .relaxation{
     
     display: flex;
@@ -240,24 +245,34 @@ body{
 }
 .relaxation__text{
     font-size: 16px;
-    
     font-weight: 400;
     color: #777777;
 }
 
 .relaxation__body{
-    width: 931px;
-    outline: 1px solid red;
-    margin: 77px 0 243px 0;
+    
+    margin: 77px 0 112px 0;
 }
 
+
 .relaxation__body__item{
-    margin-left: 72px;
-    width: 504px;
+    width: 824px;
     display: flex;
+    margin-bottom: 88px;
+    
 }
 .item__inner{
-    width: 255px;
+    width: 283px;
+        
+}
+.reverse{
+    flex-direction:row-reverse;
+    
+}
+.inner-left{
+    margin-left: 38px;
+}
+.inner-right{
     margin-right: 38px;
 }
 .relaxation__body__title{
@@ -266,13 +281,16 @@ body{
     font-size: 18px;
     line-height: 1.5;
     font-weight: 700;
-    text-transform: uppercase;
+   
     letter-spacing: -0.025em;
     color: #222222;
 }
 .relaxation__body__text{
     padding-top: 12px;
+
     text-align: right;
+
+    height: 135px;
 
     font-size: 14px;
     line-height: 1.5;
@@ -281,7 +299,17 @@ body{
     color: #777777;
 
 }
+.left{
+    text-align: left;
+}
 
+.footer{
+    padding-top:20px ;
+    text-align: center;
 
- /* relaxation ===
- ======================== */
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    color: #555555; 
+}
