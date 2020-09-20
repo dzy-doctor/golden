@@ -66,11 +66,11 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.header__inner__link{
+.nav__link{
     display: inline-block;
       
 }
-.header__inner__link a{
+.nav__link a{
     margin-left: 42px;
     
     text-decoration: none;
@@ -80,7 +80,7 @@ body{
     text-transform: uppercase;
     color: #ffffff;
 }
-.header__inner__link a:hover{
+.nav__link a:hover{
     color: blue;
 }
 .header__subtitle{
@@ -104,7 +104,7 @@ body{
     color: #ffffff;
 }
 
-.header__btn{
+.btn{
     margin-top: 34px;
 
     width: 240px;
@@ -153,15 +153,15 @@ body{
     width: 931px;
 
     display: flex;
-    
+    flex-wrap: wrap;
     justify-content: space-between;
  }
- .services__item{
+ .main-services__item{
     width: 250px;
-     /* width: 33.33333%; */
+    /* width: 33.33333%; */
     text-align: center;
  }
- .services__item__title{
+ .main-services__title{
     padding-top: 24px;
 
     font-size: 18px;
@@ -170,10 +170,12 @@ body{
     color: #222222;
     
  }
- .services__item__text{
+ .main-services__text{
+    
     margin-top: 10px;
     line-height: 1.5;
 
+    text-align: center;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: -0.025em;
@@ -183,6 +185,7 @@ body{
  /* portfolio ===
  =========================*/
  .portfolio{
+     width: 100%;
      text-align: center;
      background-color: #f7f7f7;
      display: flex;
@@ -217,7 +220,7 @@ body{
 .indent:first-child{
     margin-left: 30px; /*обращаемся к последнему классу и делаем ему отступ*/
 }
- .oval{
+.oval{
     width: 34px;
     height: 11px;
     border: 10px solid #00ff00;
@@ -248,13 +251,10 @@ body{
     font-weight: 400;
     color: #777777;
 }
-
 .relaxation__body{
     
     margin: 77px 0 112px 0;
 }
-
-
 .relaxation__body__item{
     width: 824px;
     display: flex;
@@ -281,7 +281,7 @@ body{
     font-size: 18px;
     line-height: 1.5;
     font-weight: 700;
-   
+    text-transform: uppercase;
     letter-spacing: -0.025em;
     color: #222222;
 }
@@ -302,7 +302,6 @@ body{
 .left{
     text-align: left;
 }
-
 .footer{
     padding-top:20px ;
     text-align: center;
@@ -312,4 +311,25 @@ body{
     font-weight: 400;
     letter-spacing: -0.025em;
     color: #555555; 
+}
+
+
+@media (max-width: 1150px){
+    .services__main{
+        width: 700px;
+    }
+
+    .services__item{
+        width: 350px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .services__item__text{
+        width: 250px;
+        
+        text-align: center;
+    }
 }
