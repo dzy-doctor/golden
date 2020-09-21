@@ -316,7 +316,7 @@ body{
     color: #555555; 
 }
 
-
+/* 
 @media (max-width: 1150px){
     .services__main{
         width: 700px;
@@ -334,5 +334,17 @@ body{
         width: 250px;
         
         text-align: center;
+    }
+} */
+
+@media(max-width:1050px){
+    .header__inner{
+        width:700px;
+    }
+    .header__subtitle{
+        font-size: 30px;
+    }
+    .header__title{
+        font-size: 50px;
     }
 }
