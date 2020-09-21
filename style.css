@@ -220,7 +220,7 @@ body{
 .indent:first-child{
     margin-left: 30px; /*обращаемся к последнему классу и делаем ему отступ*/
 }
-.oval{
+.portfolio__oval{
     width: 34px;
     height: 11px;
     border: 10px solid #00ff00;
@@ -255,27 +255,27 @@ body{
     
     margin: 77px 0 112px 0;
 }
-.relaxation__body__item{
+.body-relaxation__item{
     width: 824px;
     display: flex;
     margin-bottom: 88px;
     
 }
-.item__inner{
+.body-relaxation__inner{
     width: 283px;
         
 }
-.reverse{
+.body-relaxation__item_reverse{
     flex-direction:row-reverse;
     
 }
-.inner-left{
+.body-relaxation__inner_left{
     margin-left: 38px;
 }
-.inner-right{
+.body-relaxation__inner_right{
     margin-right: 38px;
 }
-.relaxation__body__title{
+.body-relaxation__title{
     text-align: right;
 
     font-size: 18px;
@@ -285,7 +285,7 @@ body{
     letter-spacing: -0.025em;
     color: #222222;
 }
-.relaxation__body__text{
+.body-relaxation__text{
     padding-top: 12px;
 
     text-align: right;
@@ -299,7 +299,10 @@ body{
     color: #777777;
 
 }
-.left{
+.body-relaxation__title_left{
+    text-align: left;
+}
+.body-relaxation__text_left{
     text-align: left;
 }
 .footer{
