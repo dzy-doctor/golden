@@ -127,12 +127,13 @@ body{
  .services{
     width: 100%;
     
+    padding-top: 98px;
     display: flex;
     align-items: center;
     flex-direction: column;
  }
- .services__title{
-    padding-top:98px;
+ .title{
+    /* padding-top:98px; */
 
     font-size: 40px;
     line-height: 75px;
@@ -141,8 +142,8 @@ body{
     letter-spacing: -0.025em;
     color: #222222;
  }
- .services__subtitle{
-    /* padding-top: ; */
+ .subtitle{
+    
     font-size: 16px;
     line-height: 1.2;
     font-weight: 400;
@@ -186,29 +187,16 @@ body{
  =========================*/
  .portfolio{
      width: 100%;
+
+     padding-top: 98px;
+
      text-align: center;
      background-color: #f7f7f7;
      display: flex;
      align-items: center;
      flex-direction: column;
  }
- .portfolio__title{
-    padding: 119px 0 20px 0;
-
-    font-size: 40px;
-    /* line-height: 75px; */
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: -0.025em;
-    color: #222222;
- }
- .portfolio__subtitle{
-    font-size: 16px;
-    /* line-height: 1.2; */
-    font-weight: 400;
-    color: #777777;
- }
- 
+  
 .portfolio__body{
     margin: 75px 0 134px 0;
     
@@ -231,26 +219,14 @@ body{
  ========================== */
 
 .relaxation{
-    
+    padding-top:98px;
+
     display: flex;
     align-items: center;
     flex-direction: column;
     
 }
-.relaxation__title{
-    padding: 124px 0 16px 0;
 
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: -0.025em;
-    color: #222222;
-}
-.relaxation__text{
-    font-size: 16px;
-    font-weight: 400;
-    color: #777777;
-}
 .relaxation__body{
     
     margin: 77px 0 112px 0;
@@ -337,7 +313,7 @@ body{
     }
 } */
 
-@media(max-width:1050px){
+@media(max-width:1100px){
     .header__inner{
         width:700px;
     }
@@ -346,5 +322,25 @@ body{
     }
     .header__title{
         font-size: 50px;
+    }
+
+    .services__main{
+        width:700px;
+        
+    }
+    .main-services__item{
+        margin-bottom: 50px;
+    }
+
+    .portfolio__body{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .portfolio__img{
+        margin-bottom: 10px;
+    }
+    .indent:first-child{
+        margin-left: 0;
     }
 }
