@@ -229,7 +229,7 @@ body{
 
 .relaxation__body{
     
-    margin: 77px 0 112px 0;
+    margin-top: 77px;
 }
 .body-relaxation__item{
     width: 824px;
@@ -282,7 +282,7 @@ body{
     text-align: left;
 }
 .footer{
-    padding-top:20px ;
+    padding:20px 0 50px 0 ;
     text-align: center;
 
     font-size: 14px;
@@ -342,5 +342,79 @@ body{
     }
     .indent:first-child{
         margin-left: 0;
+    }
+}
+
+@media(max-width:380px){
+    .header{
+        width: 380px;
+        position: relative;
+    }
+    .header__inner{
+        width: 380px;
+    }
+    .header__title{
+        font-size: 25px;
+    }
+    .header__subtitle{
+        font-size: 15px;
+    }
+    .header__logo{
+        position: absolute;
+        left: 30px;
+        
+    }
+    .nav{
+        display: none;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+    .services{
+        width: 380px;
+
+        padding-top: 20px;
+    }
+    .services__main{
+        width: 380px;
+
+        margin-bottom: 50px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio{
+        width: 380px;
+        padding: 30px 0 50px 0;
+    }
+    .portfolio__body{
+        margin: 30px 0 50px 0;
+    }
+
+    .relaxation{
+        padding-top: 20px;
+    }
+    .relaxation__body{
+        width: 380px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body-relaxation__item{
+        width: 380px;
+        margin-bottom: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body-relaxation__inner_left{
+        margin-bottom: 20px;
+    }
+    .footer{
+        padding-top: 50px;
     }
 }
