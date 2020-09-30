@@ -291,29 +291,62 @@ body{
     letter-spacing: -0.025em;
     color: #555555; 
 }
+/*burger===
+=====================*/
 
-/* 
-@media (max-width: 1150px){
-    .services__main{
-        width: 700px;
-    }
 
-    .services__item{
-        width: 350px;
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .services__item__text{
-        width: 250px;
-        
-        text-align: center;
-    }
-} */
+.burger{
+    display: none;
+}
+
+
 
 @media(max-width:1100px){
+    .nav{
+        display: none;
+    }
+    
+    .burger{
+        /* outline: 1px solid red; */
+        display: block;
+        background: none;
+        border: 0;
+        cursor: pointer;
+        padding: 9px 2px;
+    }
+    
+    .burger__item{ 
+        display: block;
+        width: 26px;
+        height: 3px;
+
+        background-color: #fff;
+
+        font-size: 0;
+        color: transparent;
+
+        position: relative;
+    }
+    
+    .burger__item::before,
+    .burger__item:after{
+        content:"";
+        /* width: 100%; если поставить то полоски буду одинаковые */
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        
+    }
+    .burger__item::before{
+       top: -8px;
+       width: 30px;
+    }
+    .burger__item:after{
+        bottom: -8px;
+        width: 20px;
+    }
     .header__inner{
         width:700px;
     }
@@ -326,7 +359,9 @@ body{
 
     .services__main{
         width:700px;
+        display: flex;
         
+        justify-content: space-evenly;
     }
     .main-services__item{
         margin-bottom: 50px;
@@ -343,16 +378,26 @@ body{
     .indent:first-child{
         margin-left: 0;
     }
+    .relaxation__body, .body-relaxation__item{
+        width: 700px;
+    }
+    
 }
 
 @media(max-width:380px){
+    
     .header{
         width: 380px;
         position: relative;
     }
     .header__inner{
         width: 380px;
+        
     }
+    .burger{
+        margin-left: 80%;
+    }
+    
     .header__title{
         font-size: 25px;
     }
@@ -362,7 +407,7 @@ body{
     .header__logo{
         position: absolute;
         left: 30px;
-        
+      
     }
     .nav{
         display: none;
@@ -371,6 +416,8 @@ body{
     .title{
         font-size: 20px;
     }
+
+
     .services{
         width: 380px;
 
